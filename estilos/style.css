@@ -1,0 +1,323 @@
+/* FUENTES PARA UTLIZAR DURANTE EL PROYECTO */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap');
+
+/* Reseteo */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* CSS PARA INDEX */
+
+/* ID del Index */
+
+#title {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Clases del Index */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    gap: px px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+.encabezado {
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    grid-area: header;
+}
+
+.encabezado .logo img {
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+.subtitulos {
+    color: rgb(0, 0, 0);
+    font-family: 'PT Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main .sponsor {
+    height: 50px;
+    display: flex;
+    background-color: rgb(42, 42, 42);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.producto>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p {
+    color: #6a6a6a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card .contenido h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(41, 213, 213);
+    border: 1px solid rgb(41, 213, 213);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+    background: rgb(41, 213, 213);
+    color: #fff;
+}
+
+
+.footerContenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+.footerContenedor .redes {
+    grid-area: footer;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer2 {
+    background-color: rgb(23, 23, 23);
+    display: flex;
+}
+
+.footer2 img {
+    height: 3rem;
+    justify-items: end;
+}
+
+/*  Íconos para Header
+.shop {
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    margin-right: 1rem;
+}
+
+.login {
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+}
+*/
+
+
+/* INDEX */
+
+.encabezado nav .navBar {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.encabezado nav .navBar li {
+    margin: 16px;
+    padding: 8px
+}
+
+.encabezado nav .navBar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+}
+
+nav .navBar li a:hover {
+    color: rgb(4, 255, 255);
+}
+
+main {
+    grid-area: main;
+}
+
+h2 {
+    margin-bottom: 20px;
+
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    color: rgb(4, 255, 255);
+    padding: 20px;
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* CSS PARA CONTACTO */
+
+/* ID de Contacto */
+
+#contacto {
+    margin-left: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+}
+
+article {
+    display: flexbox;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+
+
+/* Clases de Contacto */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+
+
+/* Código para Media Queries */
+
+@media screen and (max-width:1013px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .encabezado nav .navBar {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*Código Media Queries */
+
+@media screen and (max-width:1000px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .encabezado nav .navBar {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    main .sponsor {
+        display: none;
+    }
+
+}
+
+
+@media screen and ( max-width:870px) {
+    .portada {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .container .card .contenido {
+        text-align: center;
+    }
+    .container figure {
+        margin-left: auto;
+    }
+    .card:hover {
+        box-shadow: none;
+        transform: none;
+    }
+}
