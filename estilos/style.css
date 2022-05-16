@@ -84,52 +84,6 @@ main .sponsor {
     margin-bottom: 30px;
 }
 
-.card {
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-}
-
-.card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
-
-.card .contenido {
-    padding: 15px;
-    text-align: center;
-}
-
-.card .contenido p {
-    color: #6a6a6a;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card .contenido h3 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.card .contenido a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: rgb(41, 213, 213);
-    border: 1px solid rgb(41, 213, 213);
-    border-radius: 4px;
-    transition: all 400ms ease;
-}
-
-.card .contenido a:hover {
-    background: rgb(41, 213, 213);
-    color: #fff;
-}
 
 
 .footerContenedor {
