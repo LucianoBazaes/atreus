@@ -77,6 +77,8 @@ main .sponsor {
     align-items: center;
 }
 
+/* Código para productos que vendemos */
+
 .container {
     display: flex;
     max-width: 900px;
@@ -84,6 +86,7 @@ main .sponsor {
     margin-bottom: 30px;
 }
 
+/* Código para productos que vendemos */
 
 
 .footerContenedor {
@@ -93,7 +96,7 @@ main .sponsor {
     padding: 50px;
 }
 
-
+/* Código para Footer */
 
 .footerContenedor .redes {
     grid-area: footer;
@@ -111,6 +114,8 @@ main .sponsor {
     justify-items: end;
 }
 
+/* Código para Footer */
+
 /*  Íconos para Header
 .shop {
     position: absolute;
@@ -126,8 +131,6 @@ main .sponsor {
 }
 */
 
-
-/* INDEX */
 
 .encabezado nav .navBar {
     display: flex;
