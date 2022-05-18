@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="76x76" href="./img/logopaginacabeza.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/logopaginacabeza.png">
     <script src="https://kit.fontawesome.com/3ce5dd03da.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>ATREUS STORE</title>
 
@@ -18,42 +19,38 @@
     <!-- Código para header -->
     <div class="grid-container">
 
-        <header class="encabezado">
-
-            <div class="logo">
-
-                <figure>
-                    <a href="./index.html">
-                        <img src="./img/logo_small.png" alt="logoempresa">
-                    </a>
-                </figure>
-
-            </div>
-
+        <header>
             <!-- Código para la barra de navegación -->
-            <nav>
-
-                <ul class="navBar">
-                    <li>
-                        <a href="./index.html">Inicio</a>
-                    </li>
-
-                    <li>
-                        <a href="./secciones/componentes.html">Componentes</a>
-                    </li>
-
-                    <li>
-                        <a href="./secciones/pcarmadas.html">PC Armadas</a>
-                    </li>
-
-                    <li>
-                        <a href="./secciones/sobrenosotros.html">Sobre Nosotros</a>
-                    </li>
-
-                    <li>
-                        <a href="./secciones/contacto.html">Contacto</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light black">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo_small.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page"
+                                    href="./secciones/componentes.html">Componentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./secciones/pcarmadas.html">PC Armadas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./secciones/sobrenosotros.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./secciones/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <!-- Código para la barra de navegación -->
 
@@ -122,7 +119,6 @@
             <section class="producto">
                 <h1 id="title">LOS MEJORES PRODUCTOS A PRECIOS IDEALES</h1>
 
-
                 <div class="container">
 
                     <div class="card">
@@ -140,7 +136,7 @@
                         <img src="./img/Productos/motherboards.jpg" alt="motherboard" width="200" height="250">
                         </figure>
                         <div class="contenido">
-                            <h3>MOTHERBOARDS</h3>
+                            <h3>PLACAS MADRES</h3>
                             <a href="./secciones/componentes.html">Comprar</a>
                         </div>
                     </div>
@@ -157,7 +153,7 @@
 
                     <div class="card">
 
-                        <img src="./img/Productos/placasdevideo.jpg" alt="placasdevideo" width="200" height="250">
+                        <img src="./img/Productos/placasdevideo.jpg" alt="placasdevideo" width="200" height="220">
 
                         <div class="contenido">
                             <h3>PLACAS DE VIDEO</h3>
@@ -203,21 +199,7 @@
                     </figure>
                     <div class="contenido">
                         <h3> PC GAMER INTEL</h3>
-                        <p>Pc Gamer Core I5 12600k | Rtx 3080 10gb | 16gb Ram | Ssd 480gb | Fuente 800w 80 Plus
-                            Bronze |
-                            Water 240</p>
-                        <a href="./secciones/pcarmadas.html">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <figure>
-                        <img src="./img/Combos PC/combo2.jpg" alt="combo2" width="200" height="230">
-                    </figure>
-                    <div class="contenido">
-                        <h3>PC GAMER AMD</h3>
-                        <p>Pc Gamer Ryzen 5 5600 | Amd Radeon Rx 6700 Xt | 16gb Ram | Ssd 480gb | Fuente 800w 80
-                            Plus
+                        <p>Pc Gamer Core I5 12600k | Rtx 3080 10gb | 16gb Ram | Ssd 480gb | Fuente 800w
                         </p>
                         <a href="./secciones/pcarmadas.html">Comprar</a>
                     </div>
@@ -225,12 +207,25 @@
 
                 <div class="card">
                     <figure>
-                        <img src="./img/Combos PC/combo4.jpg" alt="combo4" width="200" height="240">
+                        <img src="./img/Combos PC/combo2.jpg" alt="combo2" width="200" height="250">
+                    </figure>
+                    <div class="contenido">
+                        <h3>PC GAMER AMD</h3>
+                        <p>Pc Gamer Ryzen 5 5600 | Amd Radeon Rx 6700 Xt | 16gb Ram | Ssd 480gb | Fuente 800w 80
+                            Plus |
+                        </p>
+                        <a href="./secciones/pcarmadas.html">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <img src="./img/Combos PC/combo4.jpg" alt="combo4" width="200" height="250">
                     </figure>
                     <div class="contenido">
                         <h3>PC GAMER AMD</h3>
                         <p>Pc Gamer Ryzen 7 5700 | Amd Radeon Rx 6700 Xt | 16gb Ram | Ssd 480gb | Fuente 800w 80
-                            Plus
+                            Plus |
                         </p>
                         <a href="./secciones/pcarmadas.html">Comprar</a>
                     </div>
@@ -252,17 +247,20 @@
                 </div>
             </div>
         </footer>
+
+        <!--  
         <div class="footer2">
             <a href="./index.html">
                 <img src="./img/logo_small.png" alt="logo">
             </a>
         </div>
     </div>
-    <!-- Redes sociales -->
+    -->
+        <!-- Redes sociales -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 
 </body>
 
