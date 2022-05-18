@@ -137,28 +137,28 @@ main .sponsor {
 
 
 .footerContenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important ;
+    padding: 50px !important;
 }
 
 /* Código para Footer */
 
 .footerContenedor .redes {
-    grid-area: footer;
-    justify-content: center;
-    align-content: center;
+    grid-area: footer !important;
+    justify-content: center !important;
+    align-content: center !important;
 }
 
 .footer2 {
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(23, 23, 23) !important;
     display: flex;
 }
 
 .footer2 img {
-    height: 3rem;
-    justify-items: end;
+    height: 3rem !important;
+    justify-items: end !important;
 }
 
 /* Código para Footer */
@@ -211,18 +211,18 @@ h2 {
 }
 
 h4 {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 h5 {
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 footer {
-    display: flex;
-    background-color: rgb(23, 23, 23);
-    color: rgb(4, 255, 255);
-    padding: 20px;
+    display: flex !important;
+    background-color: rgb(23, 23, 23) !important;
+    color: rgb(4, 255, 255) !important;
+    padding: 20px !important;
 
 }
 
