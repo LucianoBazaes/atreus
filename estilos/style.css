@@ -69,8 +69,6 @@ footer {
     margin-right: 5rem;
 }
 
-
-
 .subtitulos {
     color: rgb(0, 0, 0);
     font-family: 'PT Sans', sans-serif;
@@ -313,9 +311,11 @@ h5 {
 
 
 @media screen and (max-width: 900px) {
-    main .sponsor {
+
+    .carrousel {
         display: none;
     }
+
 }
 
 
