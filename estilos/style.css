@@ -21,8 +21,8 @@
     text-align: center;
     font-family: 'PT Sans', sans-serif;
     font-size: xx-large;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 /* ID del Index */
@@ -51,7 +51,12 @@ footer {
     background-color: rgb(42, 42, 42) !important;
     color: rgb(4, 255, 255) !important;
     padding: 20px !important;
+    justify-content: center;
 
+}
+
+.auxiliar {
+    margin-top: 700px;
 }
 
 /* Código general para el proyecto */
@@ -74,7 +79,8 @@ footer {
     font-family: 'PT Sans', sans-serif;
     font-size: xx-large;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 90px;
+    margin-bottom: 50px;
 }
 
 main .sponsor {
@@ -89,6 +95,12 @@ main .sponsor {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.iconos-bottom {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 /* Código para productos y combos que vendemos */
@@ -152,24 +164,13 @@ main .sponsor {
 
 /* Código para Footer */
 
-.footerContenedor {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 50px !important;
-}
-
-.footerContenedor .redes {
-    grid-area: footer !important;
-    justify-content: center !important;
-    align-content: center !important;
-}
-
-.footer2 {
-    background-color: rgb(23, 23, 23) !important;
+.redes-icons {
     display: flex;
 }
 
+.redes-icons img {
+    margin: 10px 10px 10px 10px;
+}
 
 /* Código para Footer */
 
@@ -253,8 +254,7 @@ nav .navBar li a:hover {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -276,6 +276,32 @@ h5 {
 .enviar {
     margin-top: 0px;
 }
+
+/* CSS para SobreNosotros */
+
+/* ID de SobreNosotros */
+
+#sobrenosotros {
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Clases para SobreNosotros */
+
+.nosotros {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logonosotros {
+    display: flex;
+}
+
 
 /* Código para Media Queries */
 
@@ -316,11 +342,15 @@ h5 {
         display: none;
     }
 
+    .iconos-buttom {
+        flex-direction: column;
+    }
+
 }
 
 
 @media screen and (max-width:870px) {
-    
+
     .portada {
         display: none;
     }
