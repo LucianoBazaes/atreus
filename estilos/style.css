@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/* FUENTES PARA UTLIZAR DURANTE EL PROYECTO */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
+
+/* Reseteo */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* CSS PARA INDEX */
+/* ID del Index */
+#title {
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-size: xx-large;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+/* ID del Index */
+
+/* Código general para el proyecto */
+
+main {
+  grid-area: main;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-bottom: 10px !important;
+}
+
+h5 {
+  margin-bottom: 10px !important;
+}
+
+footer {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  background-color: #2a2a2a !important;
+  color: #04ffff !important;
+  padding: 20px !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.auxiliar {
+  margin-top: 700px;
+}
+
+/* Código general para el proyecto */
+
+/* Clases del Index */
+
+.black {
+  background-color: #2a2a2a;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 5rem;
+}
+
+.subtitulos {
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+main .sponsor {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main .sponsor img {
+  filter: grayscale(100%);
+  /* Imagen original a color */
+}
+
+.sponsor img:hover {
+  filter: grayscale(0%);
+  /* Pone el efecto Blanco y Negro*/
+}
+
+
+.producto>div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.iconos-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* Código para productos y combos que vendemos */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 900px !important;
+  margin: auto !important;
+  margin-bottom: 30px !important;
+}
+
+.card {
+  margin: 5px !important;
+  width: 300px;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  background-color: white !important;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2) !important;
+  cursor: default !important;
+  -webkit-transition: all 400ms ease !important;
+  transition: all 400ms ease !important;
+}
+
+.card:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) !important;
+  -webkit-transform: translateY(-3%) !important;
+  transform: translateY(-3%) !important;
+}
+
+.card .contenido {
+  padding: 10px !important;
+  text-align: center !important;
+}
+
+.card .contenido p {
+  color: #6a6a6a !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+.card .contenido h3 {
+  font-family: 'Oswald', sans-serif !important;
+  font-weight: 400 !important;
+  margin-bottom: 15px !important;
+}
+
+.card .contenido a {
+  text-decoration: none !important;
+  display: inline-block !important;
+  padding: 10px !important;
+  margin-top: 10px !important;
+  color: #29d5d5 !important;
+  border: 1px solid #29d5d5 !important;
+  border-radius: 4px !important;
+  -webkit-transition: all 400ms ease !important;
+  transition: all 400ms ease !important;
+}
+
+.card .contenido a:hover {
+  background: #29d5d5 !important;
+  color: #fff !important;
+}
+
+
+
+/* Código para productos y combos que vendemos */
+/* Código para Footer */
+.redes-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.redes-icons img {
+  margin: 10px 10px 10px 10px;
+}
+
+/* Código para Footer */
+/*  Íconos para Header
+.shop {
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    margin-right: 1rem;
+}
+
+.login {
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+}
+*/
+/*
+.encabezado nav .navBar {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.encabezado nav .navBar li {
+    margin: 16px;
+    padding: 8px
+}
+
+.encabezado nav .navBar li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+}
+
+nav .navBar li a:hover {
+    color: rgb(4, 255, 255);
+}
+*/
+/*
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    gap: px px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+
+/*  
+.encabezado {
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    grid-area: header;
+}
+
+.encabezado .logo img {
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+*/
+/* ----------------------------------------------------------------------------------------------------------- */
+/* CSS PARA CONTACTO */
+/* ID de Contacto */
+#contacto {
+  margin-left: 50px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
+/* Clases de Contacto */
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.enviar {
+  margin-top: 0px;
+}
+
+/* CSS para SobreNosotros */
+
+/* ID de SobreNosotros */
+
+#sobrenosotros {
+  margin-left: 50px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+/* Clases para SobreNosotros */
+.nosotros {
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logonosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Código para Media Queries */
+@media screen and (max-width: 1013px) {
+  .encabezado {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .encabezado nav .navBar {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*Código Media Queries */
+@media screen and (max-width: 1000px) {
+  .encabezado {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .encabezado nav .navBar {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carrousel {
+    display: none;
+  }
+
+  .iconos-buttom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .portada {
+    display: none;
+  }
+
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .container .card .contenido {
+    text-align: center;
+  }
+
+  .container figure {
+    margin-left: auto;
+  }
+
+  .card:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .iconos-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  main .sponsor {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
