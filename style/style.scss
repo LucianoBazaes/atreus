@@ -1,8 +1,10 @@
-@charset "UTF-8";
+@import url("cards");
+
 /* FUENTES PARA UTLIZAR DURANTE EL PROYECTO */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
+
 
 /* Reseteo */
 * {
@@ -41,11 +43,15 @@ h5 {
     margin-bottom: 10px !important;
 }
 
+/* Aplico variable local */
+
+$color: black;
+
 footer {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    background-color: #2a2a2a !important;
+    background-color:$color !important;
     color: #04ffff !important;
     padding: 20px !important;
     -webkit-box-pack: center;
@@ -53,11 +59,14 @@ footer {
     justify-content: center;
 }
 
+/* Código temporal para bajar el footer en las páginas que no tengo contenido aún */
 .auxiliar {
     margin-top: 700px;
 }
+/* Código temporal para bajar el footer en las páginas que no tengo contenido aún */
 
 /* Código general para el proyecto */
+
 /* Clases del Index */
 .black {
     background-color: #2a2a2a;
@@ -80,11 +89,11 @@ footer {
 }
 
 main .sponsor {
-    height: 50px;
+    height: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #171717;
+    background-color: black;
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
@@ -92,6 +101,16 @@ main .sponsor {
     -ms-flex-align: center;
     align-items: center;
 }
+
+main .sponsor img {
+    filter: grayscale(100%);
+
+}
+
+main .sponsor img:hover {
+    filter: grayscale(0%);
+}
+
 
 .producto>div {
     display: -webkit-box;

@@ -1,9 +1,9 @@
 @charset "UTF-8";
+@import url("cards");
 /* FUENTES PARA UTLIZAR DURANTE EL PROYECTO */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
-
 /* Reseteo */
 * {
   padding: 0;
@@ -24,18 +24,12 @@
 }
 
 /* ID del Index */
-
 /* Código general para el proyecto */
-
 main {
   grid-area: main;
 }
 
 h2 {
-  margin-bottom: 20px;
-}
-
-h3 {
   margin-bottom: 20px;
 }
 
@@ -47,11 +41,12 @@ h5 {
   margin-bottom: 10px !important;
 }
 
+/* Aplico variable local */
 footer {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  background-color: #2a2a2a !important;
+  background-color: black !important;
   color: #04ffff !important;
   padding: 20px !important;
   -webkit-box-pack: center;
@@ -59,14 +54,14 @@ footer {
   justify-content: center;
 }
 
+/* Código temporal para bajar el footer en las páginas que no tengo contenido aún */
 .auxiliar {
   margin-top: 700px;
 }
 
+/* Código temporal para bajar el footer en las páginas que no tengo contenido aún */
 /* Código general para el proyecto */
-
 /* Clases del Index */
-
 .black {
   background-color: #2a2a2a;
 }
@@ -102,17 +97,16 @@ main .sponsor {
 }
 
 main .sponsor img {
-  filter: grayscale(100%);
-  /* Imagen original a color */
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
-.sponsor img:hover {
-  filter: grayscale(0%);
-  /* Pone el efecto Blanco y Negro*/
+main .sponsor img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
-
-.producto>div {
+.producto > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,8 +188,6 @@ main .sponsor img {
   background: #29d5d5 !important;
   color: #fff !important;
 }
-
-
 
 /* Código para productos y combos que vendemos */
 /* Código para Footer */
@@ -312,9 +304,7 @@ h5 {
 }
 
 /* CSS para SobreNosotros */
-
 /* ID de SobreNosotros */
-
 #sobrenosotros {
   margin-left: 50px;
   margin-top: 50px;
@@ -353,7 +343,6 @@ h5 {
     align-items: center;
     position: relative;
   }
-
   .encabezado nav .navBar {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -376,7 +365,6 @@ h5 {
     align-items: center;
     position: relative;
   }
-
   .encabezado nav .navBar {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -391,7 +379,6 @@ h5 {
   .carrousel {
     display: none;
   }
-
   .iconos-buttom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -404,22 +391,18 @@ h5 {
   .portada {
     display: none;
   }
-
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-
   .container .card .contenido {
     text-align: center;
   }
-
   .container figure {
     margin-left: auto;
   }
-
   .card:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -435,10 +418,8 @@ h5 {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-
   main .sponsor {
     display: none;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
