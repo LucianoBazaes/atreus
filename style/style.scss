@@ -45,13 +45,13 @@ h5 {
 
 /* Aplico variable local */
 
-$color: black;
+$color:  #2a2a2a;
 
 footer {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    background-color:$color !important;
+    background-color:$color;
     color: #04ffff !important;
     padding: 20px !important;
     -webkit-box-pack: center;
