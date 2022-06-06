@@ -36,11 +36,11 @@ h2 {
 }
 
 h4 {
-    margin-bottom: 10px !important;
+    margin-bottom: 10px;
 }
 
 h5 {
-    margin-bottom: 10px !important;
+    margin-bottom: 10px;
 }
 
 /* Aplico variable local */
@@ -48,12 +48,12 @@ h5 {
 $color:  #2a2a2a;
 
 footer {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background-color:$color;
-    color: #04ffff !important;
-    padding: 20px !important;
+    color: #04ffff;
+    padding: 20px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -132,70 +132,74 @@ main .sponsor img:hover {
     text-align: center;
 }
 
+/* Código para los botones del Mapa */
+
+
 /* Código para productos y combos que vendemos */
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 900px !important;
-    margin: auto !important;
-    margin-bottom: 30px !important;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .card {
-    margin: 5px !important;
+    margin: 5px;
     width: 300px;
-    border-radius: 6px !important;
-    overflow: hidden !important;
-    background-color: white !important;
-    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2) !important;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2) !important;
-    cursor: default !important;
-    -webkit-transition: all 400ms ease !important;
-    transition: all 400ms ease !important;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
 }
 
 .card:hover {
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) !important;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) !important;
-    -webkit-transform: translateY(-3%) !important;
-    transform: translateY(-3%) !important;
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: translateY(-3%);
+    transform: translateY(-3%);
 }
 
 .card .contenido {
-    padding: 10px !important;
-    text-align: center !important;
+    padding: 10px;
+    text-align: center;
 }
 
 .card .contenido p {
-    color: #6a6a6a !important;
-    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    color: #6a6a6a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card .contenido h3 {
-    font-family: 'Oswald', sans-serif !important;
-    font-weight: 400 !important;
-    margin-bottom: 15px !important;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
 .card .contenido a {
-    text-decoration: none !important;
-    display: inline-block !important;
-    padding: 10px !important;
-    margin-top: 10px !important;
-    color: #29d5d5 !important;
-    border: 1px solid #29d5d5 !important;
-    border-radius: 4px !important;
-    -webkit-transition: all 400ms ease !important;
-    transition: all 400ms ease !important;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #29d5d5;
+    border: 1px solid #29d5d5;
+    border-radius: 4px;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
 }
 
 .card .contenido a:hover {
-    background: #29d5d5 !important;
-    color: #fff !important;
+    background: #29d5d5;
+    color: #fff;
 }
 
 /* Código para productos y combos que vendemos */
+
 /* Código para Footer */
 .redes-icons {
     display: -webkit-box;
@@ -305,11 +309,9 @@ h5 {
     margin-bottom: 20px;
 }
 
-.enviar {
-    margin-top: 0px;
-}
 
 /* CSS para SobreNosotros */
+
 /* ID de SobreNosotros */
 #sobrenosotros {
     margin-left: 50px;
@@ -337,28 +339,12 @@ h5 {
     display: flex;
 }
 
-/* Código para Media Queries */
-@media screen and (max-width: 1013px) {
-    .encabezado {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: relative;
-    }
 
-    .encabezado nav .navBar {
-        width: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        text-align: center;
-    }
-}
+
+
+
+
+
 
 /*Código Media Queries */
 @media screen and (max-width: 1000px) {
@@ -402,6 +388,7 @@ h5 {
     }
 
     .container {
+        margin-left: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -412,9 +399,6 @@ h5 {
         text-align: center;
     }
 
-    .container figure {
-        margin-left: auto;
-    }
 
     .card:hover {
         -webkit-box-shadow: none;
