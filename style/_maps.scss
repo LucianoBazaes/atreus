@@ -22,9 +22,9 @@ $gama: (
     baja:#520397,
 );
 
-@each $tipo, $colour in $gama {
+@each $tipo, $color in $gama {
     .btn--#{$tipo} {
-        background-color: $colour;
+        background-color: $color;
         font-family:Arial, Helvetica, sans-serif;
         border: none;
         color: white;
