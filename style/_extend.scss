@@ -1,0 +1,16 @@
+
+.texto { /* Clase inventada que no está en el html, la utilizo solo en el SCSS */
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 50px;     
+}
+
+.subtitulos {
+@extend .texto;
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+}
+

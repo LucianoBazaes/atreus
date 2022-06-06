@@ -1,0 +1,36 @@
+
+.gamas {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.gama-titulo {
+    font-family:'PT Sans', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.botones-gamas {
+    display: flex;
+    justify-content: center;
+}
+
+$gama: (
+    alta:#f80a0a,
+    media:#519d06,
+    baja:#520397,
+);
+
+@each $tipo, $colour in $gama {
+    .btn--#{$tipo} {
+        background-color: $colour;
+        font-family:Arial, Helvetica, sans-serif;
+        border: none;
+        color: white;
+        padding: 10px 15px 10px 15px ;
+        border-radius: 3px;
+        margin: 10px 10px 10px 10px;
+    }
+    
+};

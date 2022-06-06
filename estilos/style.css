@@ -1,9 +1,141 @@
 @charset "UTF-8";
-@import url("cards");
-/* FUENTES PARA UTLIZAR DURANTE EL PROYECTO */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+  align-item: center;
+}
+
+.container .card {
+  margin: 5px;
+  width: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.container .card:hover {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-3%);
+  transform: translateY(-3%);
+}
+
+.container .card .contenido {
+  padding: 10px;
+  text-align: center;
+}
+
+.container .card .contenido p {
+  color: #6a6a6a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .card .contenido h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.container .card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #29d5d5;
+  border: 1px solid #29d5d5;
+  border-radius: 4px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.container .card .contenido a:hover {
+  background: #29d5d5;
+  color: #fff;
+}
+
+.gamas {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.gama-titulo {
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  color: black;
+}
+
+.botones-gamas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn--alta {
+  background-color: #f80a0a;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  margin: 10px 10px 10px 10px;
+}
+
+.btn--media {
+  background-color: #519d06;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  margin: 10px 10px 10px 10px;
+}
+
+.btn--baja {
+  background-color: #520397;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  margin: 10px 10px 10px 10px;
+}
+
+.texto, .subtitulos {
+  /* Clase inventada que no está en el html, la utilizo solo en el SCSS */
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.subtitulos {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.iconos-bottom img {
+  height: 120px;
+  width: 100px;
+}
+
+/* FUENTES PARA UTLIZAR DURANTE EL PROYECTO */
 /* Reseteo */
 * {
   padding: 0;
@@ -41,7 +173,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-/* Aplico variable local */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,15 +202,6 @@ footer {
   margin-left: 10px;
   margin-top: 20px;
   margin-right: 5rem;
-}
-
-.subtitulos {
-  color: black;
-  font-family: 'PT Sans', sans-serif;
-  font-size: xx-large;
-  text-align: center;
-  margin-top: 90px;
-  margin-bottom: 50px;
 }
 
 main .sponsor {
@@ -127,66 +249,8 @@ main .sponsor img:hover {
 }
 
 /* Código para productos y combos que vendemos */
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 900px;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.card {
-  margin: 5px;
-  width: 300px;
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: white;
-  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
-  -webkit-transition: all 400ms ease;
-  transition: all 400ms ease;
-}
-
-.card:hover {
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  -webkit-transform: translateY(-3%);
-  transform: translateY(-3%);
-}
-
-.card .contenido {
-  padding: 10px;
-  text-align: center;
-}
-
-.card .contenido p {
-  color: #6a6a6a;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card .contenido h3 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
-.card .contenido a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  margin-top: 10px;
-  color: #29d5d5;
-  border: 1px solid #29d5d5;
-  border-radius: 4px;
-  -webkit-transition: all 400ms ease;
-  transition: all 400ms ease;
-}
-
-.card .contenido a:hover {
-  background: #29d5d5;
-  color: #fff;
+.combos {
+  background-color: #dddbdb;
 }
 
 /* Código para productos y combos que vendemos */

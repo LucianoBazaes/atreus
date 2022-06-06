@@ -1,4 +1,7 @@
-@import url("cards");
+@import "cards";
+@import "maps";
+@import "extend";
+@import "mixin";
 
 /* FUENTES PARA UTLIZAR DURANTE EL PROYECTO */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
@@ -43,15 +46,12 @@ h5 {
     margin-bottom: 10px;
 }
 
-/* Aplico variable local */
-
-$color:  #2a2a2a;
 
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color:$color;
+    background-color: #2a2a2a;
     color: #04ffff;
     padding: 20px;
     -webkit-box-pack: center;
@@ -77,15 +77,6 @@ footer {
     margin-left: 10px;
     margin-top: 20px;
     margin-right: 5rem;
-}
-
-.subtitulos {
-    color: black;
-    font-family: 'PT Sans', sans-serif;
-    font-size: xx-large;
-    text-align: center;
-    margin-top: 90px;
-    margin-bottom: 50px;
 }
 
 main .sponsor {
@@ -132,73 +123,14 @@ main .sponsor img:hover {
     text-align: center;
 }
 
-/* Código para los botones del Mapa */
-
-
 /* Código para productos y combos que vendemos */
-.container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 900px;
-    margin: auto;
-    margin-bottom: 30px;
-}
 
-.card {
-    margin: 5px;
-    width: 300px;
-    border-radius: 6px;
-    overflow: hidden;
-    background-color: white;
-    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    -webkit-transition: all 400ms ease;
-    transition: all 400ms ease;
-}
-
-.card:hover {
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    -webkit-transform: translateY(-3%);
-    transform: translateY(-3%);
-}
-
-.card .contenido {
-    padding: 10px;
-    text-align: center;
-}
-
-.card .contenido p {
-    color: #6a6a6a;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.card .contenido h3 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.card .contenido a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #29d5d5;
-    border: 1px solid #29d5d5;
-    border-radius: 4px;
-    -webkit-transition: all 400ms ease;
-    transition: all 400ms ease;
-}
-
-.card .contenido a:hover {
-    background: #29d5d5;
-    color: #fff;
+.combos {
+    background-color: rgb(221, 219, 219);
 }
 
 /* Código para productos y combos que vendemos */
+
 
 /* Código para Footer */
 .redes-icons {
