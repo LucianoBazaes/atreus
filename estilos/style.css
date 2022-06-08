@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
 .container {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +15,7 @@
 }
 
 .container .card {
-  margin: 5px;
+  margin: auto;
   width: 500px;
   border-radius: 6px;
   overflow: hidden;
@@ -24,6 +25,10 @@
   cursor: default;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
+}
+
+.container .card img {
+  margin: auto;
 }
 
 .container .card:hover {
@@ -389,12 +394,6 @@ h5 {
   }
   main .sponsor {
     display: none;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .card img {
-    margin-left: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
