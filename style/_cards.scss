@@ -9,7 +9,7 @@
     align-items: center;
 
     .card {
-        margin: auto;
+        margin: 10px;
         width: 500px;
         border-radius: 6px;
         overflow: hidden;
@@ -20,15 +20,15 @@
         -webkit-transition: all 400ms ease;
         transition: all 400ms ease;
 
-        img {
-            margin: auto;
-        }
-
         &:hover {
             -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
             -webkit-transform: translateY(-3%);
             transform: translateY(-3%);
+        }
+
+        img {
+            margin: auto;
         }
 
         .contenido {

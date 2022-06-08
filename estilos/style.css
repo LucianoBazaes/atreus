@@ -15,7 +15,7 @@
 }
 
 .container .card {
-  margin: auto;
+  margin: 10px;
   width: 500px;
   border-radius: 6px;
   overflow: hidden;
@@ -27,15 +27,15 @@
   transition: all 400ms ease;
 }
 
-.container .card img {
-  margin: auto;
-}
-
 .container .card:hover {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   -webkit-transform: translateY(-3%);
   transform: translateY(-3%);
+}
+
+.container .card img {
+  margin: auto;
 }
 
 .container .card .contenido {
@@ -378,10 +378,7 @@ h5 {
     text-align: center;
   }
   .card:hover {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transform: none;
-    transform: none;
+    display: none;
   }
 }
 

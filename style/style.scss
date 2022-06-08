@@ -210,19 +210,19 @@ h5 {
 
 .titulo-componente {
     margin: 1rem 1rem 1rem 1rem;
-    font-family: 'PT Sans', sans-serif; 
-    text-align: center; 
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
 }
 
 .aside {
     margin: 1rem;
     color: #8a8a8a;
     font-size: x-large;
-    font-family: 'PT Sans', sans-serif;   
+    font-family: 'PT Sans', sans-serif;
 }
 
 .subtitulo-componente {
-    margin:2rem 2rem 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
     text-align: center;
     color: #434343;
 }
@@ -265,10 +265,7 @@ h5 {
 
 
     .card:hover {
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        -webkit-transform: none;
-        transform: none;
+        display: none;
     }
 }
 
