@@ -393,4 +393,10 @@ h5 {
     display: none;
   }
 }
+
+@media screen and (max-width: 487px) {
+  .navbar navbar-expand-lg navbar-light black {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
