@@ -9,12 +9,14 @@
   max-width: 900px;
   margin: auto;
   margin-bottom: 30px;
-  align-item: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .card {
   margin: 5px;
-  width: 300px;
+  width: 500px;
   border-radius: 6px;
   overflow: hidden;
   background-color: white;
@@ -144,7 +146,6 @@
   box-sizing: border-box;
 }
 
-/* ----------------------------------------------------------------------------------------------------------- */
 /* CSS PARA INDEX */
 /* ID del Index */
 #title {
@@ -185,12 +186,6 @@ footer {
   justify-content: center;
 }
 
-/* Código temporal para bajar el footer en las páginas que no tengo contenido aún */
-.auxiliar {
-  margin-top: 700px;
-}
-
-/* Código temporal para bajar el footer en las páginas que no tengo contenido aún */
 /* Código general para el proyecto */
 /* Clases del Index */
 .black {
@@ -266,73 +261,6 @@ main .sponsor img:hover {
 }
 
 /* Código para Footer */
-/*  Íconos para Header
-.shop {
-    position: absolute;
-    right: 4rem;
-    top: 2rem;
-    margin-right: 1rem;
-}
-
-.login {
-    position: absolute;
-    right: 1rem;
-    top: 2rem;
-}
-*/
-/*
-.encabezado nav .navBar {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-}
-
-.encabezado nav .navBar li {
-    margin: 16px;
-    padding: 8px
-}
-
-.encabezado nav .navBar li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Oswald', sans-serif;
-    font-size: x-large;
-}
-
-nav .navBar li a:hover {
-    color: rgb(4, 255, 255);
-}
-*/
-/*
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr auto 0.5fr;
-    gap: px px;
-    grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
-}
-
-/*  
-.encabezado {
-    display: flex;
-    background-color: rgb(23, 23, 23);
-    padding: 30px;
-    position: sticky;
-    top: 0;
-    align-items: center;
-    grid-area: header;
-}
-
-.encabezado .logo img {
-    height: 40px;
-    margin-left: 10px;
-    margin-top: 20px;
-}
-*/
-/* ----------------------------------------------------------------------------------------------------------- */
 /* CSS PARA CONTACTO */
 /* ID de Contacto */
 #contacto {
@@ -391,28 +319,30 @@ h5 {
   display: flex;
 }
 
-/*Código Media Queries */
-@media screen and (max-width: 1000px) {
-  .encabezado {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: relative;
-  }
-  .encabezado nav .navBar {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-  }
+/* CSS para SobreNosotros */
+/* CSS para Componentes y PC Armadas*/
+/* Clases para Componentes y PC Armadas */
+.titulo-componente {
+  margin: 1rem 1rem 1rem 1rem;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
 }
 
+.aside {
+  margin: 1rem;
+  color: #8a8a8a;
+  font-size: x-large;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.subtitulo-componente {
+  margin: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  color: #434343;
+}
+
+/* CSS para Componentes y PC Armadas*/
+/*Código Media Queries */
 @media screen and (max-width: 900px) {
   .carrousel {
     display: none;
