@@ -168,6 +168,10 @@ h5 {
     margin-bottom: 20px;
 }
 
+.auxiliar {
+    margin-top: 300px;
+}
+
 
 /* CSS para SobreNosotros */
 
@@ -280,5 +284,13 @@ h5 {
         display: none;
     }
 }
+
+@media screen and (max-width: 460px) {
+      .card img {
+          margin-left: auto;
+      }
+
+}
+
 
 /*# sourceMappingURL=style.css.map */

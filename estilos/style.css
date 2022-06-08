@@ -7,7 +7,6 @@
   display: -ms-flexbox;
   display: flex;
   max-width: 900px;
-  margin: auto;
   margin-bottom: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -291,6 +290,10 @@ h5 {
   margin-bottom: 20px;
 }
 
+.auxiliar {
+  margin-top: 300px;
+}
+
 /* CSS para SobreNosotros */
 /* ID de SobreNosotros */
 #sobrenosotros {
@@ -386,6 +389,12 @@ h5 {
   }
   main .sponsor {
     display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .card img {
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
