@@ -285,6 +285,7 @@ h5 {
 
 /* Clases de Contacto */
 .formulario {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,6 +294,10 @@ h5 {
   justify-content: center;
   font-size: x-large;
   margin-bottom: 20px;
+}
+
+.formulario article {
+  margin: 2rem;
 }
 
 .auxiliar {
@@ -391,12 +396,6 @@ h5 {
   }
   main .sponsor {
     display: none;
-  }
-}
-
-@media screen and (max-width: 487px) {
-  .navbar navbar-expand-lg navbar-light black {
-    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
