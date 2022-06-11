@@ -12,6 +12,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50%;
 }
 
 .container .card {
@@ -250,6 +251,7 @@ main .sponsor img:hover {
 /* Código para productos y combos que vendemos */
 .combos {
   background-color: #dddbdb;
+  padding: auto;
 }
 
 /* Código para productos y combos que vendemos */
@@ -342,7 +344,7 @@ h5 {
 }
 
 .aside {
-  margin: 1rem;
+  margin: 4rem;
   color: #8a8a8a;
   font-size: x-large;
   font-family: 'PT Sans', sans-serif;
