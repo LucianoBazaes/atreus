@@ -28,6 +28,7 @@
 }
 
 /* ID del Index */
+
 /* Código general para el proyecto */
 main {
     grid-area: main;
@@ -45,17 +46,78 @@ h5 {
     margin-bottom: 10px;
 }
 
-
 footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     background-color: #2a2a2a;
-    color: #04ffff;
-    padding: 20px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+    height: auto;
+    width: auto;
+    font-family: "Open Sans";
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 3rem 0rem;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover {
+    color: #29d5d5;
+}
+
+.footer-bottom {
+    background-color: #2a2a2a;
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
 
 /* Código general para el proyecto */
@@ -126,20 +188,8 @@ main .sponsor img:hover {
 /* Código para productos y combos que vendemos */
 
 
-/* Código para Footer */
-.redes-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.redes-icons img {
-    margin: 10px 10px 10px 10px;
-}
-
-/* Código para Footer */
-
 /* CSS PARA CONTACTO */
+
 /* ID de Contacto */
 #contacto {
     margin-left: 50px;
@@ -173,11 +223,6 @@ h5 {
 .formulario article {
     margin: 2rem;
 }
-
-.auxiliar {
-    margin-top: 300px;
-}
-
 
 /* CSS para SobreNosotros */
 
