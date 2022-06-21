@@ -13,15 +13,15 @@
       <link rel="icon" type="image/png" sizes="32x32" href="../img/logopaginacabeza.png">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       <link rel="stylesheet" href="../estilos/style.css">
       <title>Componentes | ATREUS STORE</title>
 
 </head>
 
 <body>
-      <!-- Código para header-->
       <header>
-            <!-- Código para la barra de navegación -->
             <nav class="navbar navbar-expand-lg navbar-light black">
                   <div class="container-fluid">
                         <a class="navbar-brand" href="../index.html">
@@ -59,12 +59,9 @@
                         </div>
                   </div>
             </nav>
-            <!-- Código para la barra de navegación -->
       </header>
-      <!-- Código para header -->
 
       <main>
-            <!-- Código para barra con logos de marcas de hardware -->
             <div class="sponsor">
                   <a href="../secciones/componentes.html">
                         <img src="../img/Sponsor/Razer logo.png" alt="razerlogo" width="80" height="60">
@@ -107,18 +104,34 @@
                   </a>
             </div>
       </main>
-      <!-- Código para barra con logos de marcas de hardware -->
-
-      <!-- Código para los distintos componentes -->
 
       <div>
             <h1 class="titulo-componente">COMPONENTES PC</h1>
 
             <aside class="aside">Buscá por categorías:</aside>
+
+            <a href="#gabinete-gamer" style="text-decoration:none;">
+                  <p class="categorias">Gabinetes Gamer</p>
+            </a>
+
+            <a href="#gabinete-oficina" style="text-decoration:none;">
+                  <p class="categorias">Gabinetes Oficina</p>
+            </a>
+
+            <a href="#monitores" style="text-decoration:none;">
+                  <p class="categorias"> Monitores</p>
+            </a>
+
+            <a href="#perifericos" style="text-decoration:none;">
+                  <p class="categorias"> Perifericos</p>
+            </a>
+
+
       </div>
 
+
       <section>
-            <h2 class="subtitulo-componente">GABINETES GAMER</h2>
+            <h2 id="gabinete-gamer">GABINETES GAMER</h2>
 
             <div class="container">
                   <div class="card">
@@ -160,7 +173,7 @@
                               alt="gabinete4" width="200" height="300">
 
                         <div class="contenido">
-                              <h3>Gabinete Corsair Obsidian</h3>
+                              <h3>Gabinete Corsair</h3>
                               <a href="#">Comprar</a>
                         </div>
                   </div>
@@ -169,9 +182,9 @@
 
       <section>
 
-            <h2 class="subtitulo-componente"> GABINETES OFICINA </h2>
+            <h2 id="gabinete-oficina""> GABINETES OFICINA </h2>
 
-            <div class="container">
+            <div class=" container">
 
                   <div class="card">
 
@@ -216,7 +229,7 @@
 
       <section>
 
-            <h2 class="subtitulo-componente"> MONITORES </h2>
+            <h2 id="monitores"> MONITORES </h2>
 
             <div class="container">
 
@@ -264,7 +277,7 @@
 
       <section>
 
-            <h2 class="subtitulo-componente"> PERIFÉRICOS </h2>
+            <h2 id="perifericos"> PERIFÉRICOS </h2>
 
             <div class="container">
 
@@ -311,41 +324,24 @@
 
       </section>
 
-
-      <!-- Redes sociales -->
       <footer>
-            <figure class="redes-icons">
-                  <a href="https://www.instagram.com/">
-                        <img src="../img/Redes Sociales/instagram.png" alt="instagram" width="30" height="30">
-                  </a>
-            </figure>
+            <div class="footer-content">
+                  <h3>Nuestras Redes Sociales</h3>
+                  <ul class="socials">
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                  </ul>
+            </div>
 
-            <figure class="redes-icons">
-                  <a href="https://web.whatsapp.com/">
-                        <img src="../img/Redes Sociales/whatsapp.png" alt="whatsapp" width="30" height="30">
-                  </a>
-            </figure>
-
-            <figure class="redes-icons">
-                  <a href="https://twitter.com/">
-                        <img src="../img/Redes Sociales/twitter.png" alt="twitter" width="30" height="30">
-                  </a>
-            </figure>
-
-            <figure class="redes-icons">
-                  <a href="https://www.facebook.com/">
-                        <img src="../img/Redes Sociales/facebook.png" alt="facebook" width="30" height="30">
-                  </a>
-            </figure>
-
-            <figure class="redes-icons">
-                  <a href="https://mail.google.com/">
-                        <img src="../img/Redes Sociales/gmail.png" alt="gmail" width="30" height="30">
-                  </a>
-            </figure>
+            <div class="footer-bottom">
+                  <p>copyright &copy;2020 Atreus Store. designed by <span> <a class="name"
+                                    href="https://www.linkedin.com/in/lucianobazaes/" target="_blank" style="text-decoration: none;">Luciano Bazaes
+                              </a></span></p>
+            </div>
       </footer>
-      <!-- Redes sociales -->
-
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

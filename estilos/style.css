@@ -142,8 +142,6 @@
   width: 100px;
 }
 
-/* FUENTES PARA UTLIZAR DURANTE EL PROYECTO */
-/* Reseteo */
 * {
   padding: 0;
   margin: 0;
@@ -151,8 +149,6 @@
   box-sizing: border-box;
 }
 
-/* CSS PARA INDEX */
-/* ID del Index */
 #title {
   text-align: center;
   font-family: 'PT Sans', sans-serif;
@@ -161,8 +157,55 @@
   margin-top: 40px;
 }
 
-/* ID del Index */
-/* Código general para el proyecto */
+#gabinete-oficina {
+  margin: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  color: #434343;
+}
+
+#gabinete-gamer {
+  margin: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  color: #434343;
+}
+
+#monitores {
+  margin: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  color: #434343;
+}
+
+#perifericos {
+  margin: 2rem 2rem 2rem 2rem;
+  text-align: center;
+  color: #434343;
+}
+
+#contacto {
+  margin-left: 50px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sobrenosotros {
+  margin-left: 50px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
 main {
   grid-area: main;
 }
@@ -269,8 +312,6 @@ footer {
   font-weight: 200;
 }
 
-/* Código general para el proyecto */
-/* Clases del Index */
 .black {
   background-color: #2a2a2a;
 }
@@ -326,32 +367,19 @@ main .sponsor img:hover {
   text-align: center;
 }
 
-/* Código para productos y combos que vendemos */
-.combos {
-  background-color: #dddbdb;
-  padding: auto;
+.name {
+  color: #8a8a8a;
 }
 
-/* Código para productos y combos que vendemos */
-/* CSS PARA CONTACTO */
-/* ID de Contacto */
-#contacto {
-  margin-left: 50px;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.combos {
+  background-color: #ededed;
+  padding: auto;
 }
 
 h5 {
   margin-bottom: 10px;
 }
 
-/* Clases de Contacto */
 .formulario {
   margin: auto;
   display: -webkit-box;
@@ -368,22 +396,6 @@ h5 {
   margin: 2rem;
 }
 
-/* CSS para SobreNosotros */
-/* ID de SobreNosotros */
-#sobrenosotros {
-  margin-left: 50px;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-}
-
-/* Clases para SobreNosotros */
 .nosotros {
   margin-top: 40px;
   text-align: center;
@@ -396,9 +408,6 @@ h5 {
   display: flex;
 }
 
-/* CSS para SobreNosotros */
-/* CSS para Componentes y PC Armadas*/
-/* Clases para Componentes y PC Armadas */
 .titulo-componente {
   margin: 1rem 1rem 1rem 1rem;
   font-family: 'PT Sans', sans-serif;
@@ -406,7 +415,7 @@ h5 {
 }
 
 .aside {
-  margin: 4rem;
+  margin: 2rem;
   color: #8a8a8a;
   font-size: x-large;
   font-family: 'PT Sans', sans-serif;
@@ -418,8 +427,13 @@ h5 {
   color: #434343;
 }
 
-/* CSS para Componentes y PC Armadas*/
-/*Código Media Queries */
+.categorias {
+  margin: 2rem;
+  color: #b0b0b0;
+  font-size: medium;
+  font-family: 'PT Sans', sans-serif;
+}
+
 @media screen and (max-width: 900px) {
   .carrousel {
     display: none;
