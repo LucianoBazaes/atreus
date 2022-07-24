@@ -1,0 +1,8 @@
+@mixin size ($width, $height) {
+    height: $height;
+    width: $width;    
+}
+
+.iconos-bottom img {
+    @include size(100px,120px)
+}

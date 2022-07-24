@@ -1,0 +1,335 @@
+@import "cards";
+@import "maps";
+@import "extend";
+@import "mixin";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Raleway:ital@1&family=Roboto:ital,wght@0,300;1,400&family=Tapestry&family=Water+Brush&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#title {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: xx-large;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+#gabinete-oficina {
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    color: #434343;
+}
+
+#gabinete-gamer {
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    color: #434343;
+}
+
+#monitores {
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    color: #434343;
+}
+
+#perifericos {
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    color: #434343; 
+}
+
+#contacto {
+    margin-left: 50px;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sobrenosotros {
+    margin-left: 50px;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2a2a2a;
+    height: auto;
+    width: auto;
+    font-family: "Open Sans";
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 3rem 0rem;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover {
+    color: #29d5d5;
+}
+
+.footer-bottom {
+    background-color: #2a2a2a;
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+.black {
+    background-color: #2a2a2a;
+}
+
+.logo img {
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 5rem;
+}
+
+main .sponsor {
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: black;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+main .sponsor img {
+    filter: grayscale(100%);
+
+}
+
+main .sponsor img:hover {
+    filter: grayscale(0%);
+}
+
+
+.producto>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.iconos-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.name {
+    color: rgb(33, 245, 245)
+}
+
+
+.combos {
+    background-color: rgb(237, 237, 237);
+    padding: auto;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+.formulario {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.formulario article {
+    margin: 2rem;
+}
+
+.nosotros {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logonosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.titulo-componente {
+    margin: 1rem 1rem 1rem 1rem;
+    font-family: 'PT Sans', sans-serif;
+    text-align:center;
+}
+
+.aside {
+    margin: 2rem;
+    color: #8a8a8a;
+    font-size: x-large;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.subtitulo-componente {
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: center;
+    color: #434343;
+}
+
+.categorias {
+    margin: 2rem;
+    color: rgb(176, 176, 176);
+    font-size: medium;
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+@media screen and (max-width: 900px) {
+    .carrousel {
+        display: none;
+    }
+
+    .iconos-buttom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .portada {
+        display: none;
+    }
+
+    .container {
+        margin-left: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .container .card .contenido {
+        text-align: center;
+    }
+
+
+    .card:hover {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .iconos-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    main .sponsor {
+        display: none;
+    }
+}
