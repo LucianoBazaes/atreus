@@ -8,8 +8,8 @@ const componentes = [
 
 //declaro mi carro de compras y que esté vacío inicialmente
 let carro = [];
-
-let seleccion = prompt("Hola, ¿desea comprar algún componente de PC? Ingrese si ó no.");
+let nombreUsaurio = prompt("Hola, bienvenido a Atreus Store, por favor ingresá tu nombre:");
+let seleccion = prompt("Hola " + nombreUsaurio + " ¿desea comprar algún componente de PC? Ingrese si ó no.");
 //declaro un blucle para que la respuesta del usuario sea válida y no ingrese una respuesta que no sea correcta
 
 while (seleccion != "si" && seleccion != "no") {
@@ -20,9 +20,9 @@ while (seleccion != "si" && seleccion != "no") {
 if (seleccion === "si") {
     alert("Elija el/los componente/s de PC que desea comprar:");
     let componentesUsuario = componentes.map(
-        (componente) => componente.nombre + " " + "" + "$" + componente.precio
+        (componente) => componente.nombre + "" + " $ " + componente.precio + "" + "\n"
     );
-    alert(componentesUsuario.join(" , "));
+    alert(componentesUsuario.join(""));
 } else if (seleccion === "no") {
     alert("Muchas gracias, hasta pronto");
 }
@@ -49,15 +49,19 @@ while (seleccion != "no") {
                     break;
             }
 
-            let cantidad = prompt("Ingrese la cantidad que desea llevar");
+            let cantidad = prompt("Ingrese la cantidad que desea llevar:");
 
             carro.push({ componente, cantidad, precio });
 
+        } else if (componente === "ESC") {
+            alert("Muchas gracias por usar nuestro simulador de compras. Hasta pronto!!!");
+            break;
         } else {
-            alert("El componente que desea no es válido, por favor seleccione una opción valida.")
+            alert("El componente ingresado no es válido.");
         }
+        
 
-        seleccion = prompt("¿Desea continuar comprando?");
+        seleccion = prompt("¿Desea continuar comprando? Ingrese si o no");
 
         while (seleccion === "no") {
             alert("Gracias por su compra, hasta pronto");
