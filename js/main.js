@@ -8,8 +8,8 @@ const componentes = [
 
 //declaro mi carro de compras y que esté vacío inicialmente
 let carro = [];
-let nombreUsaurio = prompt("Hola, bienvenido a Atreus Store, por favor ingresá tu nombre:");
-let seleccion = prompt("Hola " + nombreUsaurio + " ¿desea comprar algún componente de PC? Ingrese si ó no.");
+let nombreUsuario = prompt("Hola, bienvenido a Atreus Store, por favor ingresá tu nombre:");
+let seleccion = prompt("Hola " + nombreUsuario + " ¿desea comprar algún componente de PC? Ingrese si ó no.");
 //declaro un blucle para que la respuesta del usuario sea válida y no ingrese una respuesta que no sea correcta
 
 while (seleccion != "si" && seleccion != "no") {
@@ -70,4 +70,8 @@ while (seleccion != "no") {
 }
 
 const total = carro.reduce ((acc, el) => acc + el.precio * el.cantidad, 0)
-alert("El total a pagar es de " + "" + "$" +  total);
+
+//DOM
+
+const dom = document.getElementById("dom");
+dom.innerHTML = `Hola el monto total a pagar de nuestro simulador de compras es de: $${total}. Hasta pronto`;
