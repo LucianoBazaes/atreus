@@ -1,4 +1,4 @@
-
+/*
 const componentes = [
     { nombre: "procesador", precio: 30000 },
     { nombre: "memoriaRAM", precio: 7000 },
@@ -75,3 +75,40 @@ const total = carro.reduce ((acc, el) => acc + el.precio * el.cantidad, 0)
 
 const dom = document.getElementById("dom");
 dom.innerHTML = `Hola el monto total a pagar de nuestro simulador de compras es de: $${total}. Hasta pronto`;
+
+*/
+//EVENTOS
+
+class Cliente {
+    constructor(nombre, apellido, mail) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.mail = mail;
+    }
+}
+
+const clientes = [];
+
+const cancelarForm = document.getElementById("cancelarForm");
+const form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById("nombreForm");
+    const apellido = document.getElementById("apellidoForm");
+    const mail = document.getElementById("mailForm");
+    
+
+    const cliente = new Cliente(nombre.value, apellido.value, mail.value);
+    clientes.push(cliente);
+    console.log(clientes);
+
+    alert(`Hola ${nombre.value}, hemos recibido tu solicitud de formulario, en breve nos pondremos en contacto con vos`);
+    form.reset();
+    
+});
+
+cancelarForm.onclick = () => {
+    alert(`Hola, hemos cancelado tu solicitud de formulario, hasta pronto!`);
+};
+

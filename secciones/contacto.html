@@ -106,31 +106,30 @@
             </div>
 
             <section class="formulario">
-                <article>
-                    <form action="#">
+                    <form id="form">
                         <div>
-                            <label for="nombre y apellido">Ingrese su nombre y apellido: <br>
-                                <input type="nombre y apellido" placeholder="Nombre y Apellido"
-                                    name="nombre y apellido">
+                            <label for="nombre">Ingrese su nombre: <br>
+                                <input id="nombreForm" type="nombr" name="nombre">
+                                <br>
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="apellido">Ingrese su apellido: <br>
+                                <input id="apellidoForm" type="apellido" name="apellido">
                                 <br>
                             </label>
                         </div>
 
                         <div>
                             <label for="email">Ingrese su email: <br>
-                                <input type="email" placeholder="aaa@gmail.com" name="email"> <br>
-                            </label>
-                        </div>
-
-                        <div>
-                            <label for="asunto">Asunto: <br>
-                                <textarea></textarea>
+                                <input id="mailForm" type="email" placeholder="aaa@gmail.com" name="email"> <br>
                             </label>
                         </div>
 
                         <div> Si tu consulta es por alguna compra, selecciona la sucursal donde realizaste la compra:
                             <br>
-                            <select name="ubicacion" id="ubicacion">
+                            <select name="ubicacion">
                                 <option value="mendoza">ATREUS, Capital,Mendoza</option>
                                 <option value="cordoba">ATREUS, Rio Cuarto,Cordoba</option>
                                 <option value="buenos aires">ATREUS, Moron,Buenos Aires</option>
@@ -141,12 +140,12 @@
                         <div> Suscribite a nuestras promociones
                             <input type="checkbox" name="acepta" value="1">
                         </div>
+
+                        <div class="button-contacto">
+                            <button type="submit" id="enviarForm" class="btn btn-success">Enviar</button>
+                            <button type="submit" id="cancelarForm" class="btn btn-danger">Cancelar</button>
+                        </div>
                     </form>
-                    <div class="button-contacto">
-                        <button type="button" class="btn btn-success">Enviar</button>
-                        <button type="button" class="btn btn-danger">Cancelar</button>
-                    </div>
-                </article>
             </section>
 
         </main>
@@ -163,9 +162,13 @@
             </div>
 
             <div class="footer-bottom">
-                <p>copyright &copy;2020 Atreus Store. designed by <span> <a class="name" href="https://www.linkedin.com/in/lucianobazaes/" target="_blank" style="text-decoration:none ;">Luciano Bazaes </a></span></p>
+                <p>copyright &copy;2020 Atreus Store. designed by <span> <a class="name"
+                            href="https://www.linkedin.com/in/lucianobazaes/" target="_blank"
+                            style="text-decoration:none ;">Luciano Bazaes </a></span></p>
             </div>
         </footer>
+
+        <script src="../js/main.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
