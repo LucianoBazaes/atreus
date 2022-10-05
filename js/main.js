@@ -98,7 +98,8 @@ form.addEventListener("submit", (e) => {
     const apellido = document.getElementById("apellidoForm");
     const mail = document.getElementById("mailForm");
 
-
+    (nombre.value === "") ? alert("Por favor ingresá tu nombre.") : alert(`Hola ${nombre.value}, hemos recibido tu solicitud de formulario, en breve nos pondremos en contacto con vos`) ;
+ 
     let cliente = new Cliente(nombre.value, apellido.value, mail.value);
     clientes.push(cliente);
     form.reset();
@@ -118,8 +119,7 @@ form.addEventListener("submit", (e) => {
     // } 
     // simplificamos el código de la siguiente manera;
 
-    (nombre.value === "") ? alert("Por favor ingresá tu nombre.") : alert(`Hola ${nombre.value}, hemos recibido tu solicitud de formulario, en breve nos pondremos en contacto con vos`) 
- 
+   
     console.log(clientes);
 
 
