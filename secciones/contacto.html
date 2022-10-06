@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="../estilos/style.css">
     <title> Contacto | ATREUS STORE</title>
 
@@ -106,46 +107,45 @@
             </div>
 
             <section class="formulario">
-                    <form id="form">
-                        <div>
-                            <label for="nombre">Ingrese su nombre: <br>
-                                <input id="nombreForm" type="nombr" name="nombre">
-                                <br>
-                            </label>
-                        </div>
-
-                        <div>
-                            <label for="apellido">Ingrese su apellido: <br>
-                                <input id="apellidoForm" type="apellido" name="apellido">
-                                <br>
-                            </label>
-                        </div>
-
-                        <div>
-                            <label for="email">Ingrese su email: <br>
-                                <input id="mailForm" type="email" placeholder="aaa@gmail.com" name="email"> <br>
-                            </label>
-                        </div>
-
-                        <div> Si tu consulta es por alguna compra, selecciona la sucursal donde realizaste la compra:
+                <form id="form">
+                    <div>
+                        <label for="nombre">Ingrese su nombre: <br>
+                            <input id="nombreForm" type="nombr" name="nombre">
                             <br>
-                            <select name="ubicacion">
-                                <option value="mendoza">ATREUS, Capital,Mendoza</option>
-                                <option value="cordoba">ATREUS, Rio Cuarto,Cordoba</option>
-                                <option value="buenos aires">ATREUS, Moron,Buenos Aires</option>
-                            </select>
-                        </div>
+                        </label>
+                    </div>
 
+                    <div>
+                        <label for="apellido">Ingrese su apellido: <br>
+                            <input id="apellidoForm" type="apellido" name="apellido">
+                            <br>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="email">Ingrese su email: <br>
+                            <input id="mailForm" type="email" placeholder="aaa@gmail.com" name="email"> <br>
+                        </label>
+                    </div>
+
+                    <div> Si tu consulta es por alguna compra, selecciona la sucursal donde realizaste la compra:
                         <br>
-                        <div> Suscribite a nuestras promociones
-                            <input type="checkbox" name="acepta" value="1">
-                        </div>
+                        <select name="ubicacion">
+                            <option value="mendoza">ATREUS, Capital,Mendoza</option>
+                            <option value="cordoba">ATREUS, Rio Cuarto,Cordoba</option>
+                            <option value="buenos aires">ATREUS, Moron,Buenos Aires</option>
+                        </select>
+                    </div>
 
-                        <div class="button-contacto">
-                            <button type="submit" id="enviarForm" class="btn btn-success">Enviar</button>
-                            <button type="submit" id="cancelarForm" class="btn btn-danger">Cancelar</button>
-                        </div>
-                    </form>
+                    <br>
+                    <div> Suscribite a nuestras promociones
+                        <input type="checkbox" name="acepta" value="1">
+                    </div>
+
+                    <div class="button-contacto">
+                        <button type="submit" id="enviarForm" class="btn btn-success">Enviar</button>
+                    </div>
+                </form>
             </section>
 
         </main>
@@ -168,12 +168,15 @@
             </div>
         </footer>
 
-        <script src="../js/main.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+        <script src="../js/main.js"></script>
 </body>
 
 </html>

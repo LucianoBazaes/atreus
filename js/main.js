@@ -92,23 +92,12 @@ let clientes = [];
 const cancelarForm = document.getElementById("cancelarForm");
 const form = document.getElementById("form");
 
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     const nombre = document.getElementById("nombreForm");
     const apellido = document.getElementById("apellidoForm");
     const mail = document.getElementById("mailForm");
-
-    (nombre.value === "") ? alert("Por favor ingresá tu nombre.") : alert(`Hola ${nombre.value}, hemos recibido tu solicitud de formulario, en breve nos pondremos en contacto con vos`) ;
- 
-    let cliente = new Cliente(nombre.value, apellido.value, mail.value);
-    clientes.push(cliente);
-    form.reset();
-    
-
-    // Agrego mis objetos que obtuve desde mi formulario al LocalStorage utilizando el formato JSON  con el método stringify().
-    localStorage.setItem("cliente", JSON.stringify(clientes));
-
-
 
     // Aplico operador ternario 
     // En lugar de hacer:
@@ -119,14 +108,53 @@ form.addEventListener("submit", (e) => {
     // } 
     // simplificamos el código de la siguiente manera;
 
+    // (nombre.value === "") ? alert("Por favor ingresá tu nombre.") : alert(`Hola ${nombre.value}, hemos recibido tu solicitud de formulario, en breve nos pondremos en contacto con vos`) ;
+
    
+
+    // Agrego mis objetos que obtuve desde mi formulario al LocalStorage utilizando el formato JSON  con el método stringify().
+    localStorage.setItem("cliente", JSON.stringify(clientes));
+
     console.log(clientes);
 
+    // Aplicando SweetAlert
+    Swal.fire({
+        title: `Hola ${nombre.value}, ¿querés realizar una solicitud de formulario para contactarnos?`,
+        text: "Por favor, antes de enviarnos una solicitud, revisá que los datos que ingresaste sean los correctos.",
+        icon: "info",
+        confirmButtonText: "Aceptar",
+        confirmButtonColor: "#5FC400",
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonColor: "#EA0F0F"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            let cliente = new Cliente(nombre.value, apellido.value, mail.value);
+            clientes.push(cliente);
+            form.reset();
 
+            Swal.fire({
+                title: "Tu formulario ha sido enviado con éxito",
+                text: "Formulario enviado",
+                icon: "success",
+                confirmButtonText: "Aceptar",
+                confirmButtonColor: "#29d5d5",
+            })  
+
+            Toastify({
+                text: "Listo, hemos recibido tu solicitud.",
+                className: "info",
+                style: {
+                  background: "#5FC400",
+                }
+              }).showToast();
+            
+        }
+    })
+
+    
 });
 
-cancelarForm.onclick = () => {
-    alert(`Hola, hemos cancelado tu solicitud de formulario, hasta pronto!`);
-};
+
 
 
