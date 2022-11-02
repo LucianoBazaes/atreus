@@ -59,25 +59,33 @@
                     </div>
                 </div>
 
-                <a id="carro" class="navbar-brand" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <!-- <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>                  -->
-                    <img src="./img/shopping-cart.png" alt="carritodecompras" height="50" width="50" -m>
-                </a>
+                <!-- CARRITO DE COMPRAS -->
+                <div>
+                    <a id="carro" class="navbar-brand" type="button" data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <!-- <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>                  -->
+                          <img src="../img/shopping-cart.png" alt="carritodecompras" height="50" width="50" -m>
+                    </a>
 
 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <p id="offcanvasRightLabel">Carrito de Comp</p>
-                        <button type="button" class="btn btn-danger"> X </button>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false"
+                          tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                          <div class="offcanvas-header">
+                                <p id="offcanvasRightLabel">Sus productos son:</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                      aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body  contenedorCarrito">
+                          </div>
+                          <div class="totalCarrito">
+                                <h5 class="mb-0"> Total:</h5>
+                                <h5 class="totalCompra">$0</h5>
+                                <button type="button" class="btn btn-success btnComprar">Comprar</button>
+                          </div>
                     </div>
-                    <div class="offcanvas-body">
-                        Hola, este es el carrito jeje
-                    </div>
-                </div>
+              </div>
+              <!-- CARRITO DE COMPRAS -->
             </nav>
         </header>
 
