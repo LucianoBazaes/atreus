@@ -15,6 +15,7 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
       <link rel="stylesheet" href="../estilos/style.css">
       <title>Componentes | ATREUS STORE</title>
 
@@ -44,10 +45,10 @@
                                           <a class="nav-link text-white" aria-current="page"
                                                 href="../secciones/componentes.html">Componentes</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                           <a class="nav-link text-white" href="../secciones/pcarmadas.html">PC
                                                 Armadas</a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                           <a class="nav-link text-white" href="../secciones/sobrenosotros.html">Sobre
                                                 Nosotros</a>
@@ -58,6 +59,33 @@
                               </ul>
                         </div>
                   </div>
+                  <!-- CARRITO DE COMPRAS -->
+                  <div>
+                        <a id="carro" class="navbar-brand" type="button" data-bs-toggle="offcanvas"
+                              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                              <!-- <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>                  -->
+                              <img src="../img/shopping-cart.png" alt="carritodecompras" height="50" width="50" -m>
+                        </a>
+
+
+
+                        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false"
+                              tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                              <div class="offcanvas-header">
+                                    <p id="offcanvasRightLabel">Sus productos son:</p>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                          aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body  contenedorCarrito">
+                              </div>
+                              <div class="totalCarrito">
+                                    <h5 class="mb-0"> Total:</h5>
+                                    <h5 class="totalCompra">$0</h5>
+                                    <button type="button" class="btn btn-success btnComprar">Comprar</button>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- CARRITO DE COMPRAS -->
             </nav>
       </header>
 
@@ -105,171 +133,169 @@
             </div>
       </main>
 
-      <div>
-            <h1 class="titulo-componente">COMPONENTES PC</h1>
-
-            <aside class="aside">Buscá por categorías:</aside>
-
-            <a href="#gabinete-gamer" style="text-decoration:none;">
-                  <p class="categorias">Gabinetes Gamer</p>
-            </a>
-
-            <a href="#gabinete-oficina" style="text-decoration:none;">
-                  <p class="categorias">Gabinetes Oficina</p>
-            </a>
-
-            <a href="#monitores" style="text-decoration:none;">
-                  <p class="categorias"> Monitores</p>
-            </a>
-
-            <a href="#perifericos" style="text-decoration:none;">
-                  <p class="categorias"> Perifericos</p>
-            </a>
-
-
-      </div>
-
 
       <section>
-            <h2 id="gabinete-gamer">GABINETES GAMER</h2>
+            <h2 id="procesadores">PROCESADORES AMD</h2>
 
             <div class="container">
-                  <div class="card">
+                  <div class="card" id="procesador1">
 
-                        <img src="../img/Componentes/Gabinetes/D_NQ_NP_770819-MLA31356694413_072019-V.jpg"
-                              alt="gabinete1" width="200" height="300">
+                        <img class="imgProducto" src="../img/Componentes/Procesadores/procesador1.jpg" alt="procesador1"
+                              width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Gabinete Sentey RGB</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Procesador Ryzen 5 4500</h3>
+                              <p class="precios">$40000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="procesador2">
 
-                        <img src="../img/Componentes/Gabinetes/D_NQ_NP_809302-MLA43597767815_092020-V.jpg"
-                              alt="gabinete2" width="200" height="300">
+                        <img class="imgProducto" src="../img/Componentes/Procesadores/procesador2.jpg" alt="procesador2"
+                              width="200" height="200">
                         </figure>
                         <div class="contenido">
-                              <h3>Gabinete Gamer Shenlong One</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Procesador Ryzen 5 5600</h3>
+                              <p class="precios">$50000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="procesador3">
 
-                        <img src="../img/Componentes/Gabinetes/D_NQ_NP_848569-MLA47066056460_082021-V.JPG"
-                              alt="gabinete3" width="200" height="300">
+                        <img class="imgProducto" src="../img/Componentes/Procesadores/procesador3.jpg" alt="procesador3"
+                              width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Gabinete Magnumtech</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Procesador Ryzen 7 5800x</h3>
+                              <p class="precios">$60000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="procesador4">
 
-                        <img src="../img/Componentes/Gabinetes/D_NQ_NP_799820-MLA45602478200_042021-V.jpg"
-                              alt="gabinete4" width="200" height="300">
+                        <img class="imgProducto" src="../img/Componentes/Procesadores/procesador4.jpg" alt="procesador4"
+                              width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Gabinete Corsair</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Procesador Ryzen 9 5900x </h3>
+                              <p class="precios">$90000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
             </div>
+
+      </section>
+
+
+      <section>
+
+            <h2 id="procesadores"> PROCESADORES INTEL </h2>
+
+            <div class=" container" id="procesador5">
+
+                  <div class="card">
+
+                        <img class="imgProducto" src="../img/Componentes/Procesadores/intel1.jpg" alt="procesador5"
+                              width="200" height="200">
+
+                        <div class="contenido">
+                              <h3 class="subtituloCard">Procesador Intel Core I3 </h3>
+                              <p class="precios">$30000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
+                        </div>
+                  </div>
+
+                  <div class="card" id="procesador6">
+
+                        <img class="imgProducto" src="../img/Componentes/Procesadores/intel2.jpg" alt="procesador6"
+                              width="200" height="200">
+
+                        <div class="contenido">
+                              <h3 class="subtituloCard">Procesador Intel Core I5 </h3>
+                              <p class="precios">$45000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
+                        </div>
+                  </div>
+
+                  <div class="card" id="procesador7">
+
+                        <img class="imgProducto" src="../img/Componentes/Procesadores/intel3.jpg" alt="procesador7"
+                              width="200" height="200">
+
+                        <div class="contenido">
+                              <h3 class="subtituloCard">Procesador Intel Core I7 </h3>
+                              <p class="precios">$70000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
+                        </div>
+                  </div>
+
+                  <div class="card" id="procesador8">
+
+                        <img class="imgProducto" src="../img/Componentes/Procesadores/intel4.jpg" alt="procesador8"
+                              width="200" height="200">
+
+                        <div class="contenido">
+                              <h3 class="subtituloCard">Procesador Intel Core I9</h3>
+                              <p class="precios">$100000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
+                        </div>
+                  </div>
       </section>
 
       <section>
 
-            <h2 id="gabinete-oficina""> GABINETES OFICINA </h2>
-
-            <div class=" container">
-
-                  <div class="card">
-
-                        <img src="../img/Componentes/Gabinetes/OFICINA1.JPG" alt="gabinete5" width="200" height="300">
-
-                        <div class="contenido">
-                              <h3>Gabinete Slim Sentey</h3>
-                              <a href="#">Comprar</a>
-                        </div>
-                  </div>
-
-                  <div class="card">
-
-                        <img src="../img/Componentes/Gabinetes/OFICINA2.JPG" alt="gabinete6" width="200" height="300">
-                        </figure>
-                        <div class="contenido">
-                              <h3>Gabinete HDC ATX</h3>
-                              <a href="#">Comprar</a>
-                        </div>
-                  </div>
-
-                  <div class="card">
-
-                        <img src="../img/Componentes/Gabinetes/OFICINA3.JPG" alt="gabinete7" width="200" height="300">
-
-                        <div class="contenido">
-                              <h3>Gabinete Aureox Ephory</h3>
-                              <a href="#">Comprar</a>
-                        </div>
-                  </div>
-
-                  <div class="card">
-
-                        <img src="../img/Componentes/Gabinetes/OFICINA4.JPG" alt="gabinete8" width="200" height="300">
-
-                        <div class="contenido">
-                              <h3>Gabinete Corsair 5000D</h3>
-                              <a href="#">Comprar</a>
-                        </div>
-                  </div>
-      </section>
-
-      <section>
-
-            <h2 id="monitores"> MONITORES </h2>
+            <h2 id="motherboards"> MOTHERBOARDS </h2>
 
             <div class="container">
 
-                  <div class="card">
+                  <div class="card" id="mother1">
 
-                        <img src="../img/Componentes/Monitores/monitor1.jpg" alt="monitor1" width="200" height="250">
+                        <img class="imgProducto" src="../img/Componentes/Motherboards/motherboard1.jpg"
+                              alt="placamadre1" width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Monitor Gamer BENQ Led 24</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Mother B550 Aorus</h3>
+                              <p class="precios">$63000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="mother2">
 
-                        <img src="../img/Componentes/Monitores/monitor2.jpg" alt="monitor2" width="200" height="250">
+                        <img class="imgProducto" src="../img/Componentes/Motherboards/motherboard2.jpg"
+                              alt="placamadre2" width="200" height="200">
                         </figure>
                         <div class="contenido">
-                              <h3>Monitor Gamer ASUS Led 23.8</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Mother Gigabyte B550M</h3>
+                              <p class="precios">$28000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="mother3">
 
-                        <img src="../img/Componentes/Monitores/monitor3.jpg" alt="monitor3" width="200" height="250">
+                        <img class="imgProducto" src="../img/Componentes/Motherboards/motherboard3.jpg"
+                              alt="placamadre3" width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Monitor Philips Led 23.8 </h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Mother 1200 Asus Prime</h3>
+                              <p class="precios">$47000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="mother4">
 
-                        <img src="../img/Componentes/Monitores/monitor4.jpg" alt="monitor4" width="200" height="250">
+                        <img class="imgProducto" src="../img/Componentes/Motherboards/motherboard4.jpg"
+                              alt="placamadre4" width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Monitor Gamer Curvo LG Led 34</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Mother B660M Aorus</h3>
+                              <p class="precios">$55000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
@@ -277,52 +303,114 @@
 
       <section>
 
-            <h2 id="perifericos"> PERIFÉRICOS </h2>
+            <h2 id="memoriaRam"> MEMORIAS RAM </h2>
 
             <div class="container">
 
-                  <div class="card">
+                  <div class="card" id="ram1">
 
-                        <img src="../img/Componentes/Perifericos/Teclado.jpg" alt="pad" width="200" height="350">
+                        <img class="imgProducto" src="../img/Componentes/MemoriasRAM/memoria1.jpg" alt="memoria1"
+                              width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Mousepad Razer Goliathus</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Memoria RAM DDR4 3000MHZ 16GB Corsair</h3>
+                              <p class="precios">$28000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="ram2">
 
-                        <img src="../img/Componentes/Perifericos/mouse.jpg" alt="mouse" width="200" height="350">
+                        <img class="imgProducto" src="../img/Componentes/MemoriasRAM/memoria2.jpg" alt="memoria2"
+                              width="200" height="200">
                         </figure>
                         <div class="contenido">
-                              <h3>Mouse Logitech White</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Memoria RAM DDR4 3200MHZ 16GB Corsair</h3>
+                              <p class="precios">$41000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="ram3">
 
-                        <img src="../img/Componentes/Perifericos/microfono.jpg" alt="microfono" width="200"
-                              height="350">
+                        <img class="imgProducto" src="../img/Componentes/MemoriasRAM/memoria3.jpg" alt="memoria3"
+                              width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Microfono Hyperx </h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Memoria RAM DDR4 3600MHZ 16GB Kingstone</h3>
+                              <p class="precios">$30000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card" id="ram4">
 
-                        <img src="../img/Componentes/Perifericos/headset.jpg" alt="headset" width="200" height="350">
+                        <img class="imgProducto" src="../img/Componentes/MemoriasRAM/memoria4.jpg" alt="memoria4"
+                              width="200" height="200">
 
                         <div class="contenido">
-                              <h3>Auriculares Logitech G733</h3>
-                              <a href="#">Comprar</a>
+                              <h3 class="subtituloCard">Memoria RAM DDR4 4000MHZ 16GB Pny</h3>
+                              <p class="precios">$32000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
                         </div>
                   </div>
 
       </section>
+
+      <section>
+            <h2 id="placasVideo"> PLACAS DE VIDEO </h2>
+
+            <div class="container">
+
+                  <div class="card" id="video1">
+
+                        <img class="imgProducto" src="../img/Componentes/Placas de Video/gpu1.jpg" alt="gpu1"
+                              width="200" height="200">
+
+                        <div class="contenido">
+                              <h3 class="subtituloCard">Placa De Video Amd Radeon Asus Dual Rx 6750 Xt</h3>
+                              <p class="precios">$172000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
+                        </div>
+                  </div>
+
+                  <div class="card" id="video2">
+
+                        <img class="imgProducto" src="../img/Componentes/Placas de Video/gpu2.jpg" alt="gpu2"
+                              width="200" height="200">
+                        </figure>
+                        <div class="contenido">
+                              <h3 class="subtituloCard">Placa De Video Asus Tuf Amd Radeon Rx 6900</h3>
+                              <p class="precios">$270000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
+                        </div>
+                  </div>
+
+                  <div class="card" id="video3">
+
+                        <img class="imgProducto" src="../img/Componentes/Placas de Video/gpu3.jpg" alt="gpu3"
+                              width="200" height="200">
+
+                        <div class="contenido">
+                              <h3 class="subtituloCard">Placa De Video Geforce Rtx 2060 Ko 6gb Evga</h3>
+                              <p class="precios">$102000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
+                        </div>
+                  </div>
+
+                  <div class="card" id="video4">
+
+                        <img class="imgProducto" src="../img/Componentes/Placas de Video/gpu4.jpg" alt="gpu4"
+                              width="200" height="200">
+
+                        <div class="contenido">
+                              <h3 class="subtituloCard">Placa De Video Geforce Rtx 3070 Evga Ftw3 Ultra</h3>
+                              <p class="precios">$194000</p>
+                              <button type="button" class="btn btn-outline-info addCarrito">Comprar</button>
+                        </div>
+                  </div>
+      </section>
+
 
       <footer>
             <div class="footer-content">
@@ -338,7 +426,8 @@
 
             <div class="footer-bottom">
                   <p>copyright &copy;2020 Atreus Store. designed by <span> <a class="name"
-                                    href="https://www.linkedin.com/in/lucianobazaes/" target="_blank" style="text-decoration: none;">Luciano Bazaes
+                                    href="https://www.linkedin.com/in/lucianobazaes/" target="_blank"
+                                    style="text-decoration: none;">Luciano Bazaes
                               </a></span></p>
             </div>
       </footer>
@@ -347,6 +436,9 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
 
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+      <script src="../js/carrito.js"></script>
 </body>
 
 </html>
