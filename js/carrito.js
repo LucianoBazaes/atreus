@@ -64,6 +64,9 @@ addProducto.forEach(addProductoBoton => {
    addProductoBoton.addEventListener('click', agregarAlCarrito);
 })
 
+// Evento para cuando realicen la compra me limpie el carrito 
+const btnRealizarCompra = document.querySelector('.btnRealizarCompra');
+btnRealizarCompra.addEventListener('click', limpiarCarrito);
 
 //funcion para agregar productos al carrito mediante el boton "COMPRAR"
 function agregarAlCarrito(event){
@@ -178,15 +181,10 @@ function cambiarCantidadProducto(event) {
    calcularTotalCompra();
 }
 
-//Evento para cuando el cliente presiona el boton comprar 
+//Funcion para que una vez se haya realizado la compra, me limpie el carrito
+ function limpiarCarrito() {
+   contenedorCarrito.innerHTML = "";
+   calcularTotalCompra();
+ }
 
-const btnComprar = document.getElementById('btnComprar');
-btnComprar.addEventListener('click', ()=>{
-   Toastify({
-      text: "Listo, hemos recibido tu solicitud.",
-      className: "info",
-      style: {
-          background: "#5FC400",
-      }
-  }).showToast();
-})
+ 
