@@ -83,7 +83,8 @@ function agregarAlCarrito(event){
    className: "info",
    position: "center",
    style: {
-       background: "#5FC400",
+       background: "linear-gradient(to right, #00b09b, #96c93d)",
+       color: "#000000",
    }
 
 }).showToast();
@@ -157,9 +158,10 @@ function eliminarProductoCarrito(event) {
       text: "Producto removido del carrito",
       className: "info",
       gravity: "bottom",
-      position: "right",
+      position: "center",
       style: {
-          background: "#ff0000",
+          background: "linear-gradient(to right, #fd1d1d, #fc7f45)",
+          color: "#ffffff",
       }
    
    }).showToast();
