@@ -78,6 +78,15 @@ function agregarAlCarrito(event){
  
   //Llamo a la funcion que se encarga de crear el html dentro del carrito
   agregarTituloImagenPrecio(subtituloCard,precio,imagen);
+  Toastify({
+   text: "Producto agregado al carrito exitosamente",
+   className: "info",
+   position: "center",
+   style: {
+       background: "#5FC400",
+   }
+
+}).showToast();
 }
 
 
@@ -144,6 +153,16 @@ function eliminarProductoCarrito(event) {
     const botonEliminarProducto = event.target;
     botonEliminarProducto.closest('.carroItem').remove();
     calcularTotalCompra();
+    Toastify({
+      text: "Producto removido del carrito",
+      className: "info",
+      gravity: "bottom",
+      position: "right",
+      style: {
+          background: "#ff0000",
+      }
+   
+   }).showToast();
     
 }
 
@@ -158,3 +177,14 @@ function cambiarCantidadProducto(event) {
 }
 
 //Evento para cuando el cliente presiona el boton comprar 
+
+const btnComprar = document.getElementById('btnComprar');
+btnComprar.addEventListener('click', ()=>{
+   Toastify({
+      text: "Listo, hemos recibido tu solicitud.",
+      className: "info",
+      style: {
+          background: "#5FC400",
+      }
+  }).showToast();
+})
