@@ -64,7 +64,13 @@
                         <a id="carro" class="navbar-brand" type="button" data-bs-toggle="offcanvas"
                               data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                               <!-- <i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i>                  -->
-                              <img src="../img/shopping-cart.png" alt="carritodecompras" height="50" width="50" -m>
+                              <div class="carritoContainer">
+                                    <div class="contadorCarroCompra">
+                                          <img src="../img/shopping-cart.png" alt="carritodecompras" height="50"
+                                                width="50" -m>
+                                          <p class="contadorCarritoTexto"></p>
+                                    </div>
+                              </div>
                         </a>
 
 
@@ -81,7 +87,8 @@
                               <div class="totalCarrito">
                                     <h5 class="mb-0"> Total:</h5>
                                     <h5 class="totalCompra">$0</h5>
-                                    <button type="button" class="btn btn-success btnRealizarCompra" data-bs-toggle="modal"  data-bs-target="#exampleModal">Realizar Compra</button>
+                                    <button type="button" class="btn btn-success btnRealizarCompra"
+                                          data-bs-toggle="modal" data-bs-target="#exampleModal">Realizar Compra</button>
                               </div>
                               <div>
                                     <!-- Modal -->
@@ -90,16 +97,19 @@
                                           <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                       <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Gracias por elegirnos 👍
-                                                                  </h5>
+                                                            <h5 class="modal-title" id="exampleModalLabel">Gracias por
+                                                                  elegirnos 👍
+                                                            </h5>
                                                             <button type="button" class="btn-close"
                                                                   data-bs-dismiss="modal" aria-label="Close"></button>
                                                       </div>
                                                       <div class="modal-body">
-                                                            Su compra fue realizada con éxito, pronto nos pondremos en contacto con vos. Que tengas un excelente día. Atreus Store
+                                                            Su compra fue realizada con éxito, pronto nos pondremos en
+                                                            contacto con vos. Que tengas un excelente día. Atreus Store
                                                       </div>
                                                       <div class="modal-footer">
-                                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                                                            <button type="button" class="btn btn-success"
+                                                                  data-bs-dismiss="modal">Aceptar</button>
                                                       </div>
                                                 </div>
                                           </div>

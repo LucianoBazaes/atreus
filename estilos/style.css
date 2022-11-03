@@ -303,6 +303,14 @@ footer {
 
 }
 
+.carritoContainer {
+  display: flex;
+}
+
+.contadorCarritoTexto {
+  color: #21f5f5;
+  padding: auto;
+}
 
 /* Carrito de Compras */
 
